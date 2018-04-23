@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!--指定struts配置的dtd信息-->
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+    <!--通过constant元素来配置Struts2的属性，默认值为false-->
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <!--设置struts是否使用开发模式-->
+    <constant name="struts.devMode" value="false" />
+    <!--指定web应用的默认编码集-->
+    <constant name="struts.i18n.encoding" value="UTF-8" />
+    <constant name="struts.action.extension" value="do,," />
+    <constant name="struts.ui.theme" value="simple" />
+    <constant name="struts.ui.templateDir" value="template" />
+    <!--     <constant name="struts.ui.templateSuffix" value="ftl" /> -->
+    <constant name="struts.ui.templateSuffix" value="html" />
+    <constant name="struts.multipart.maxSize" value="50428800" />
+    <constant name="struts.url.https.port" value="8443" />
+    <constant name="struts.action.excludePattern" value="/static/.*?" /><!-- default locale -->
+
+    <!--通过include可以导入其他配置文件-->
+    <!--添加package元素，该元素是Struts配置文件的核心，但是在配置文件中不是必须存在的-->
+    <include file="struts-config/struts-account.xml"/>
+    <include file="struts-config/struts-organize.xml"/>
+    <include file="struts-config/struts-role.xml"/>
+    <include file="struts-config/struts-message.xml"/>
+</struts>

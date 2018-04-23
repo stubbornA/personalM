@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="organize" extends="struts-default" namespace="/organize">
+        <action name="organizeAction_organizeList" class="com.lyf.action.OrganizeAction" method="organizeList">
+            <result name="organizeList">/WEB-INF/orgdepartment.jsp</result>
+        </action>
+        <action name="organizeAction_organizeLook" class="com.lyf.action.OrganizeAction" method="organizeLook">
+            <result name="organizeLook">/WEB-INF/orgdepartment_look.jsp</result>
+        </action>
+        <action name="organizeAction_towardOrganizeUpdate" class="com.lyf.action.OrganizeAction" method="towardOrganizeUpdate">
+            <result name="towardOrganizeUpdate">/WEB-INF/orgdepartment_update.jsp</result>
+        </action>
+        <action name="organizeAction_OrganizeUpdate" class="com.lyf.action.OrganizeAction" method="organizeUpdate">
+            <!--<result name="towardOrganizeUpdate">/WEB-INF/orgdepartment_update.jsp</result>-->
+            <result name="organizeList">/WEB-INF/orgdepartment.jsp</result>
+        </action>
+        <action name="organizeAction_OrganizeDelete" class="com.lyf.action.OrganizeAction" method="organizeDelete">
+            <result name="organizeList">/WEB-INF/orgdepartment.jsp</result>
+        </action>
+        <action name="organizeAction_towardOrganizeAdd" class="com.lyf.action.OrganizeAction" method="towardOrganizeAdd">
+            <result name="towardOrganizeAdd">/WEB-INF/orgdepartment_add.jsp</result>
+        </action>
+        <action name="organizeAction_OrganizeAdd" class="com.lyf.action.OrganizeAction" method="organizeAdd">
+            <result name="organizeList">/WEB-INF/orgdepartment.jsp</result>
+        </action>
+    </package>
+</struts>

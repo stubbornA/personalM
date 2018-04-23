@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="NewDrug:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/NewDrug_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="NewDrug/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="NewDrug" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="commons-fileupload" />
+          <element id="library" level="project" name="c3p0-0.9.1" />
+          <element id="library" level="project" name="javassist-3.20.0-GA" />
+          <element id="library" level="project" name="json-lib-2.1" />
+          <element id="library" level="project" name="jta-1.1" />
+          <element id="library" level="project" name="antlr-2.7.6" />
+          <element id="library" level="project" name="mysql-driver-5.0.7" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.lyf.pojos.Organize" table="organize" schema="personmanage">
+        <id name="oid" column="oid"/>
+        <property name="oname" column="oname"/>
+        <property name="director" column="director"/>
+        <property name="phone" column="phone"/>
+        <property name="adress" column="adress"/>
+        <property name="pnumber" column="pnumber"/>
+        <property name="email" column="email"/>
+        <property name="orgnote" column="orgnote"/>
+        <property name="ocode" column="ocode"/>
+    </class>
+</hibernate-mapping>

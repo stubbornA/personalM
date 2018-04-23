@@ -1,0 +1,269 @@
+<dataSource name="MySQL - drug@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="drug">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="a" />
+    <schema id="3" name="bbs" />
+    <schema id="4" name="bz" />
+    <schema id="5" name="data" />
+    <schema id="6" name="firstwork" />
+    <schema id="7" name="information_schema" />
+    <schema id="8" name="market" />
+    <schema id="9" name="mpet" />
+    <schema id="10" name="mysql" />
+    <schema id="11" name="news" />
+    <schema id="12" name="performance_schema" />
+    <schema id="13" name="petstore" />
+    <schema id="14" name="project1" />
+    <schema id="15" name="redis" />
+    <schema id="16" name="sys" />
+    <schema id="17" name="zhdtypt" />
+    <table id="18" parent="1" name="badmedicine" />
+    <table id="19" parent="1" name="buy_order" />
+    <table id="20" parent="1" name="buyer" />
+    <table id="21" parent="1" name="medicine" />
+    <table id="22" parent="1" name="personal" />
+    <table id="23" parent="1" name="respository" />
+    <table id="24" parent="1" name="role" />
+    <table id="25" parent="1" name="sell_order" />
+    <table id="26" parent="1" name="seller" />
+    <table id="27" parent="1" name="user" />
+    <column id="28" parent="18" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="29" parent="18" name="med_id">
+      <data-type>char(10)|0</data-type>
+    </column>
+    <column id="30" parent="18" name="med_name">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="31" parent="18" name="med_price">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="32" parent="18" name="med_num">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="33" parent="18" name="saver">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="34" parent="18" name="state">
+      <data-type>char(1)|0</data-type>
+    </column>
+    <column id="35" parent="18" name="date">
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <key id="36" parent="18" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="37" parent="19" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="38" parent="19" name="med_id">
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="39" parent="19" name="number">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="40" parent="19" name="import_price">
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="41" parent="19" name="buyer">
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="42" parent="19" name="buy_company">
+      <data-type>varchar(40)|0</data-type>
+    </column>
+    <column id="43" parent="19" name="state">
+      <data-type>char(1)|0</data-type>
+    </column>
+    <column id="44" parent="19" name="buyer_date">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="45" parent="19" name="buy_or_back">
+      <data-type>varchar(5)|0</data-type>
+    </column>
+    <key id="46" parent="19" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="47" parent="20" name="buyer_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="48" parent="20" name="buyer_name">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="49" parent="20" name="buyer_key">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="50" parent="20" name="buyer_desc">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <key id="51" parent="20" name="PRIMARY">
+      <columns>buyer_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="52" parent="21" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="53" parent="21" name="med_id">
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="54" parent="21" name="med_name">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="55" parent="21" name="med_price">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="56" parent="21" name="fac_id">
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <key id="57" parent="21" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="58" parent="22" name="personal_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="59" parent="22" name="name">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="60" parent="22" name="age">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="61" parent="22" name="sex">
+      <data-type>char(4)|0</data-type>
+    </column>
+    <column id="62" parent="22" name="birthDate">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="63" parent="22" name="role">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="64" parent="22" name="address">
+      <data-type>varchar(60)|0</data-type>
+    </column>
+    <column id="65" parent="22" name="telephone">
+      <data-type>char(11)|0</data-type>
+    </column>
+    <column id="66" parent="22" name="email">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <key id="67" parent="22" name="PRIMARY">
+      <columns>personal_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="68" parent="23" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="69" parent="23" name="med_id">
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="70" parent="23" name="med_name">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="71" parent="23" name="med_num">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="72" parent="23" name="fac_id">
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <key id="73" parent="23" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="74" parent="24" name="role_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="75" parent="24" name="role">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <key id="76" parent="24" name="PRIMARY">
+      <columns>role_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="77" parent="25" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="78" parent="25" name="med_id">
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="79" parent="25" name="number">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="80" parent="25" name="seller">
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="81" parent="25" name="cus_name">
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="82" parent="25" name="buy_or_back">
+      <data-type>varchar(5)|0</data-type>
+    </column>
+    <column id="83" parent="25" name="state">
+      <data-type>char(1)|0</data-type>
+    </column>
+    <key id="84" parent="25" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="85" parent="26" name="seller_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="86" parent="26" name="seller_name">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="87" parent="26" name="seller_key">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="88" parent="26" name="seller_desc">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <key id="89" parent="26" name="PRIMARY">
+      <columns>seller_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="90" parent="27" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="91" parent="27" name="username">
+      <data-type>varchar(50)|0</data-type>
+    </column>
+    <column id="92" parent="27" name="password">
+      <data-type>varchar(32)|0</data-type>
+    </column>
+    <column id="93" parent="27" name="telephone">
+      <data-type>char(11)|0</data-type>
+    </column>
+    <column id="94" parent="27" name="email">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="95" parent="27" name="role">
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <key id="96" parent="27" name="PRIMARY">
+      <columns>user_id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>

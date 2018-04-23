@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.lyf.pojos.Account" table="account" schema="personmanage">
+        <id name="aid" column="aid"/>
+        <property name="username" column="username"/>
+        <property name="password" column="password"/>
+        <property name="oid" column="oid"/>
+        <property name="oname" column="oname"/>
+        <property name="ocode" column="ocode"/>
+        <property name="rid" column="rid"/>
+        <property name="rname" column="rname"/>
+        <property name="state" column="state"/>
+    </class>
+</hibernate-mapping>

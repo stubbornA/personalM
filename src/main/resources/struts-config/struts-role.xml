@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="role" extends="struts-default" namespace="/role">
+        <!--<action name="roleAction_towardRoleList" class="com.lyf.action.RoleAction" method="towardRoleList">-->
+            <!--<result name="towardRoleList">/WEB-INF/role_manage.jsp</result>-->
+        <!--</action>-->
+        <action name="roleAction_roleList" class="com.lyf.action.RoleAction" method="roleList">
+            <result name="roleList">/WEB-INF/role_manage.jsp</result>
+        </action>
+        <action name="roleAction_roleDelete" class="com.lyf.action.RoleAction" method="roleDelete">
+            <result name="roleList">/WEB-INF/role_manage.jsp</result>
+        </action>
+        <action name="roleAction_towardRoleAdd" class="com.lyf.action.RoleAction" method="towardRoleAdd">
+            <result name="towardRoleAdd">/WEB-INF/role_add.jsp</result>
+        </action>
+        <action name="roleAction_roleAdd" class="com.lyf.action.RoleAction" method="roleAdd">
+            <result name="roleList">/WEB-INF/role_manage.jsp</result>
+        </action>
+    </package>
+</struts>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <package name="account" extends="struts-default" namespace="/account">
+        <action name="AccountAction_welcome" class="com.lyf.action.AccountAction" method="welcome">
+            <result name="welcome">/WEB-INF/login.jsp</result>
+        </action>
+        <action name="AccountAction_login" class="com.lyf.action.AccountAction" method="login">
+            <result name="loginIn">/WEB-INF/index.jsp</result>
+            <result name="fail">/WEB-INF/login.jsp</result>
+        </action>
+        <action name="AccountAction_register" class="com.lyf.action.AccountAction" method="register">
+            <result name="registerSuccess">/WEB-INF/login.jsp</result>
+            <result name="registerFail">/WEB-INF/register.jsp</result>
+        </action>
+        <action name="AccountAction_towardRegister" class="com.lyf.action.AccountAction" method="towardRegister">
+            <result name="towardRegister">/WEB-INF/register.jsp</result>
+        </action>
+        <action name="AccountAction_getAccount" class="com.lyf.action.AccountAction" method="getAccount">
+            <result name="getAccount">/WEB-INF/account.jsp</result>
+        </action>
+        <action name="AccountAction_AccountUpdate" class="com.lyf.action.AccountAction" method="AccountUpdate">
+            <result name="AccountUpdate">/WEB-INF/account.jsp</result>
+        </action>
+        <action name="AccountAction_getAccountInfor" class="com.lyf.action.AccountAction" method="getAccountInfor">
+            <result name="getAccountInfor">/WEB-INF/infor.jsp</result>
+        </action>
+        <action name="AccountAction_loginOut" class="com.lyf.action.AccountAction" method="loginOut">
+            <result name="welcome">/WEB-INF/login.jsp</result>
+        </action>
+        <action name="AccountAction_towardAccountList" class="com.lyf.action.AccountAction" method="towardAccountList">
+            <result name="towardAccountList">/WEB-INF/accountList.jsp</result>
+        </action>
+
+        <action name="AccountAction_AccountDelete" class="com.lyf.action.AccountAction" method="AccountDelete">
+            <result name="towardAccountList">/WEB-INF/accountList.jsp</result>
+        </action>
+        <action name="AccountAction_towardAccountAudit" class="com.lyf.action.AccountAction" method="towardAccountAudit">
+            <result name="towardAccountAudit">/WEB-INF/accountAudit.jsp</result>
+        </action>
+        <action name="AccountAction_AccountAudit1" class="com.lyf.action.AccountAction" method="AccountAudit1">
+            <result name="towardAccountList">/WEB-INF/accountList.jsp</result>
+        </action>
+        <action name="AccountAction_AccountAudit2" class="com.lyf.action.AccountAction" method="AccountAudit2">
+            <result name="towardAccountList">/WEB-INF/accountList.jsp</result>
+        </action>
+    </package>
+</struts>
